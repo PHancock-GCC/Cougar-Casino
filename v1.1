@@ -1,0 +1,24 @@
+from tkinter import *
+import tkinter.messagebox as tkMessageBox
+import sqlite3
+    
+root = Tk()
+root.title("Python: Simple Inventory System")
+ 
+width = 640
+height = 480
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+x = (screen_width/2) - (width/2)
+y = (screen_height/2) - (height/2)
+root.geometry("%dx%d+%d+%d" % (width, height, x, y))
+root.resizable(0, 0)
+def Database():
+    global conn, cursor
+    conn = sqlite3.connect("db_member.db")
+    cursor = conn.cursor()
+    cursor.execute("CREATE TABLE IF NOT EXISTS `member`\
+    (mem_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\
+    username TEXT, password TEXT, firstname TEXT, lastname TEXT)")
+        
+        
