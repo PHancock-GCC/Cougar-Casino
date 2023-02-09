@@ -1,7 +1,7 @@
 # Cougar-Casino
 CIS 256 Project
 
-Your first assignment is to review the skills you gained from Python Level I. What better way than with the creation of your very on Casino!
+Your first assignment is to review the skills you gained from Python Level I. What better way than with the creation of your very own Casino!
 
 1. Your casino should allow the user to login or register if they are a new to the casino. (2 points)
 
